@@ -76,6 +76,13 @@ class CommandsCog(commands.Cog):
             allowed_mentions=discord.AllowedMentions.none(),
         )
 
+    @app_commands.command()
+    @app_commands.guild_only()
+    @app_commands.guild_install()
+    async def invokeauth(self, interaction: discord.Interaction):
+        interaction.client.dispatch("member_join", interaction.user)
+        await interaction.response.send_message("Check your DMs!", ephemeral=True)
+
 
 async def setup(bot: "AuthBot"):
     await bot.add_cog(CommandsCog())

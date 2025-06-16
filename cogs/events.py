@@ -20,17 +20,6 @@ class Events(commands.Cog):
             view=VerifyCTA(),
         )
 
-    @commands.command()
-    async def invoke(
-        self,
-        ctx: commands.Context,
-        member: discord.Member,
-        *,
-        event: str = "member_join",
-    ):
-        self.bot.dispatch(event, member)
-        await ctx.send(f"Invoked on {member}")
-
 
 async def setup(bot: commands.Bot):
     await bot.add_cog(Events(bot))
