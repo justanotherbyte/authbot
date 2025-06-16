@@ -1,0 +1,15 @@
+[project]
+name = "authbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiodns>=3.5.0",
+    "aiosmtplib>=4.0.1",
+    "asyncpg>=0.30.0",
+    "brotli>=1.1.0",
+    "discord-py>=2.5.2",
+    "jishaku>=2.6.0",
+    "uvloop>=0.21.0",
+]

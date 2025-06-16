@@ -1,0 +1,5 @@
+Welcome to $INSTITUTE Discord Servers.
+
+I'm $BOT_NAME. Authenticate using this code: $CODE
+
+It is case-sensitive.
