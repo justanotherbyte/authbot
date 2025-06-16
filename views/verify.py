@@ -57,8 +57,9 @@ class CodeModal(ui.Modal, title="Code Verification"):
                 (
                     "Verified! Run the `/verify` command in any guild to authenticate. "
                     "You will be automatically authenticated the next time you join a guild "
-                    f"protected by {interaction.guild.name}."
-                )
+                    f"protected by {interaction.guild.me.mention}."
+                ),
+                allowed_mentions=discord.AllowedMentions.none(),
             )
 
 
