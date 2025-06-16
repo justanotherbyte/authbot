@@ -1,3 +1,5 @@
+# !!!!! RENAME THIS FILE TO config.py !!!!!!
+
 # Discord
 TOKEN = "<YOUR DISCORD TOKEN HERE>"  # Your Discord Bot Token
 
