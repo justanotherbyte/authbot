@@ -1,7 +1,7 @@
 [project]
 name = "authbot"
 version = "0.1.0"
-description = "Add your description here"
+description = "Easy email verification for your institute's Discord guilds."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
