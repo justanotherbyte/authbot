@@ -17,6 +17,11 @@ class EmailModal(ui.Modal, title="Email Verification"):
 
     async def on_submit(self, interaction: discord.Interaction):
         emails_cog: "EmailQueue" = interaction.client.get_cog("EmailQueue")  # type: ignore
+        if config.CHECK_EMAIL(self.email.value) is False:
+            return await interaction.response.send_message(
+                "Invalid email address", ephemeral=True
+            )
+
         await emails_cog.email_queue.put((interaction.user.id, self.email.value))
         await interaction.response.send_message(f"Email: {self.email.value}")
 
