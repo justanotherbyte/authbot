@@ -2,9 +2,9 @@
 TOKEN = "<YOUR DISCORD TOKEN HERE>"
 
 # Gmail
-EMAIL_USERNAME = ""
-EMAIL_PASSWORD = ""
-EMAIL_HOSTNAME = ""
+EMAIL_USERNAME = "youremail@gmail.com"
+EMAIL_PASSWORD = "Gmail App Password"
+EMAIL_HOSTNAME = "smtp.gmail.com"
 EMAIL_PORT = 587
 
 # PostgreSQL
